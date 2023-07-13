@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+#cabecalho {
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid grey;
+    
+}
+#cabecalho .nav .nav-link.active {
+    background-color: white;
+}
+.section-title {
+    font-family: 'Raleway', serif;
+    font-weight: 900;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio>.nav-link.active:hover {
+    color: white;
+}
+
+
+#cabecalho a {
+    position: relative;
+}
+#cabecalho a::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    top: 90%;
+    left: 10px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-brand{
+    position: relative;
+    font-size: 2em;
+}
+
+.nav-link {
+    font-size: 1.3em;
+}
+#cabecalho a:hover:after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.carousel__img {
+    height: 90vh;
+}
+.bordasBrancas {
+    border: 2px solid white;
+}
+
+@media (max-width:767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+}
+
+.nav-cardapio>.nav-link.active,
+form .btn {
+    background-color: white;
+    color: black;
+}
+
+.nav-cardapio>.nav-link {
+    color: white;
+}
+.social-links li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-toggler{
+    background-color: white;
+    color: white;
+}
+/* 
+
+
+.carousel--color {
+    background-color: #64278C;
+}
+
+
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+
+.text-colored {
+    color: #64278C;
+}
+
+
+
+
+} */
